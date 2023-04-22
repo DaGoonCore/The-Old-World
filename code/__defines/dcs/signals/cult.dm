@@ -1,5 +1,0 @@
-#define COMSIG_CULT_ADD_EFFECT "cult_addeffect"
-#define COMSIG_CULT_REMOVE_EFFECT "cult_removeeffect"
-#define COMSIG_CULT_ADD_FAVOR "cult_addfavor"
-#define COMSIG_CULT_EFFECT_ADDED "cult_effectadded"
-#define COMSIG_CULT_EFFECT_ADD_FAILED "cult_effectnotadded"
