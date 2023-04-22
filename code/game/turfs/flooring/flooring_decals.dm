@@ -43,6 +43,27 @@ var/list/floor_decals = list()
 	initialized = TRUE
 	return INITIALIZE_HINT_QDEL
 
+/obj/effect/floor_decal/path
+	name = "default path"
+	icon = 'icons/turf/flooring/path.dmi'
+
+/obj/effect/floor_decal/path/cobble
+	name = "Cobblestone Path"
+	icon_state = "cobblepath0"
+
+/obj/effect/floor_decal/path/cobble/center
+	name = "Cobblestone Path"
+	icon_state = "cobblecenter"
+
+/obj/effect/floor_decal/path/cobble/corner
+	name = "Cobblestone Path"
+	icon_state = "cobblecorner"
+
+/obj/effect/floor_decal/path/cobble/fork
+	name = "Cobblestone Path"
+	icon_state = "cobblefork"
+
+
 /obj/effect/floor_decal/carpet
 	name = "brown carpet"
 	icon = 'icons/turf/flooring/carpet.dmi'
@@ -304,6 +325,16 @@ var/list/floor_decals = list()
 	name = "spline - plain"
 	icon_state = "spline_plain"
 	alpha = 229
+
+/obj/effect/floor_decal/spline/grass
+	name = "Lush grass edge"
+	icon = 'icons/turf/flooring/grass.dmi'
+	icon_state = "grass_edges"
+
+/obj/effect/floor_decal/spline/darkgrass
+	name = "Lush grass edge"
+	icon = 'icons/turf/flooring/darkgrass.dmi'
+	icon_state = "grass_edges"
 
 /obj/effect/floor_decal/spline/plain/diagonal
 	icon_state = "spline_plain_diagonal"

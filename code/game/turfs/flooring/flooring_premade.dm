@@ -96,38 +96,32 @@
 	icon_state = "new_wood"
 	initial_flooring = /decl/flooring/new_wood
 
-/turf/simulated/floor/new_wood/two
-	icon_state = "new_wood2"
-
-/turf/simulated/floor/new_wood/three
-	icon_state = "new_wood3"
-
-/turf/simulated/floor/new_wood/four
-	icon_state = "new_wood4"
-/turf/simulated/floor/new_wood/five
-	icon_state = "new_wood5"
-/turf/simulated/floor/new_wood/six
-	icon_state = "new_wood6"
-/turf/simulated/floor/new_wood/seven
-	icon_state = "new_wood7"
-/turf/simulated/floor/new_wood/eight
-	icon_state = "new_wood8"
-/turf/simulated/floor/new_wood/nine
-	icon_state = "new_wood9"
-
 /turf/simulated/floor/stone
 	name = "stone floor"
+	desc = "Rough hewn stone"
 	icon = 'icons/turf/flooring/stonefloor.dmi'
-	icon_state = "MAIN"
+	icon_state = "Stone"
 	initial_flooring = /decl/flooring/stone
+
+/turf/simulated/floor/stone/New()
+	icon_state ="Stone[rand(0,3)]"
+	..()
+
+/turf/simulated/floor/stone/border
+	name = "stone floor"
+	desc = "Rough hewn stone"
+	icon = 'icons/turf/flooring/stonefloor.dmi'
+	icon_state = "Border"
+	initial_flooring = /decl/flooring/stone/border
 
 /turf/simulated/floor/stone/chapel
 	name = "monastic stone floor"
 	holy = 1
 
-/turf/simulated/floor/stone/New()
-	icon_state = pick("main","1","2","3","extra","extra1","extra2","extra3")
-	..()
+/turf/simulated/floor/castle
+	name = "Castle floor"
+	icon = 'icons/turf/brickstone.dmi'
+	icon_state = "brickstone_floor"
 
 /turf/simulated/floor/grass
 	name = "grass patch"

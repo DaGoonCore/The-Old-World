@@ -96,7 +96,7 @@
 	icon_state = "snow"
 
 /turf/simulated/floor/dirty/indestructable/snow/New()
-	icon_state = pick("snow[rand(1,12)]","snow0")
+	icon_state ="snow[rand(0,12)]"
 	..()
 
 /turf/simulated/floor/dirty/New()
@@ -253,6 +253,7 @@
 	desc = "This mud looks tougher than most other muds."
 	icon_state = "mud"
 	movement_delay = 0.1
+	has_light = FALSE
 
 /turf/simulated/floor/dirty/indestructable/mud/New()
 	dir = pick(GLOB.alldirs)
